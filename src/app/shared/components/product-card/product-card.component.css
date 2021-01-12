@@ -1,0 +1,12 @@
+.card .card-image img {
+  border-radius: 15px 15px 0 0;
+}
+
+.card {
+  border-radius: 15px 15px 15px 15px;
+}
+
+.card .card-action {
+  border-radius: 0 0 15px 15px;
+  border: 1px;
+}
