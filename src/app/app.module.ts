@@ -4,23 +4,25 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import {SharedModule} from './shared/shared.module';
-import { HomeComponent } from './home/home.component';
-import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
-import { NavComponent } from './nav/nav.component';
-import { FooterComponent } from './footer/footer.component';
+import { GraphQLModule } from './graphql.module';
+import { HttpClientModule } from '@angular/common/http';
+import {CoreModule} from './core/core.module';
+
+export const globals = {
+  baseUrl: 'http://localhost:3000'
+};
 
 @NgModule({
   declarations: [
-    AppComponent,
-    HomeComponent,
-    PageNotFoundComponent,
-    NavComponent,
-    FooterComponent
+    AppComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    SharedModule
+    SharedModule,
+    CoreModule,
+    GraphQLModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

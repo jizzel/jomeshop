@@ -1,1 +1,11 @@
-table
+<h4>Books</h4>
+<ol>
+  <li *ngFor="let book of books">
+    {{"Book: "+
+    book.id +" "+
+    book.name +" " +
+    book.genre +" " +
+    book.author.name
+    }}
+  </li>
+</ol>
