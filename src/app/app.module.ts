@@ -8,10 +8,6 @@ import { GraphQLModule } from './graphql.module';
 import { HttpClientModule } from '@angular/common/http';
 import {CoreModule} from './core/core.module';
 
-export const globals = {
-  baseUrl: 'http://localhost:3000'
-};
-
 @NgModule({
   declarations: [
     AppComponent

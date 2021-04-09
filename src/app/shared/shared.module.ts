@@ -6,15 +6,6 @@ import { DatePickerComponent } from './components/date-picker/date-picker.compon
 import { TableComponent } from './components/table/table.component';
 import { CorouselComponent } from './components/corousel/corousel.component';
 import {HttpClientModule} from '@angular/common/http';
-import {DataService} from './services/data.service';
-import {OrderService} from './services/order.service';
-import {ProductService} from './services/product.service';
-import {ShoppingCartService} from './services/shopping-cart.service';
-import {UserService} from './services/user.service';
-import {AuthService} from './services/auth.service';
-import {CarouselService} from './services/carousel.service';
-import {CategoryService} from './services/category.service';
-
 
 
 @NgModule({
@@ -31,14 +22,6 @@ import {CategoryService} from './services/category.service';
     TableComponent,
     CorouselComponent,
   ],
-  providers: [
-    AuthService,
-    CarouselService,
-    CategoryService,
-    OrderService,
-    ProductService,
-    ShoppingCartService,
-    UserService
-  ]
+  providers: []
 })
 export class SharedModule { }
