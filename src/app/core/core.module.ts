@@ -6,13 +6,19 @@ import {NavbarComponent} from './componets/navbar/navbar.component';
 import {PageNotFoundComponent} from './componets/page-not-found/page-not-found.component';
 import { CarouselComponent } from './componets/carousel/carousel.component';
 import {SharedModule} from '../shared/shared.module';
+import {RouterModule} from '@angular/router';
+import {AppRoutingModule} from '../app-routing.module';
+import {AdminModule} from '../admin/admin.module';
 
 
 @NgModule({
   declarations: [HomeComponent, NavbarComponent, LoginComponent, PageNotFoundComponent, CarouselComponent],
   imports: [
     CommonModule,
-    SharedModule
+    SharedModule,
+    RouterModule,
+    // AppRoutingModule,
+    // AdminModule
   ],
   exports: [HomeComponent, NavbarComponent, LoginComponent, PageNotFoundComponent, CarouselComponent]
 })
